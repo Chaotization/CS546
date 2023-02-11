@@ -3,6 +3,7 @@
 */
 import {sortAndFilter, merge, matrixMultiply} from "./arrayUtils.js"
 import {palindromes, censorWords, distance} from "./stringUtils.js"
+import{checkObjectsCondition, areObjectsEqual, calculateObject, combineObjects} from "./objectUtils"
     //Question 1 in arrayUtils
 // let people = [
 //     {name: 'Ryan', age: '22', location: 'Hoboken', role: 'Student'},
@@ -57,13 +58,18 @@ import {palindromes, censorWords, distance} from "./stringUtils.js"
 // console.log(distance("Bob met Adam on wednesday", "Adam", "Bob"));
 //console.log(distance("I was going to buy preworkout powder yesterday", "going to", "workout powder");
 // console.log(distance("The brown fox jumped over the lazy dog", "fox", "dog"));
-console.log(distance("I was going to buy workout powder yesterday", "going to", "workout powder"))
-// let str = "I was going to buy workout powder yesterday";
-// let word1 = "workout powder";
-// word1.split(" ").map(item => console.log(str.split(" ").indexOf(item)));
-console.log()
-console.log()
-console.log()
-console.log()
-console.log()
-console.log()
+// console.log(distance("I was going to buy workout powder yesterday", "going to", "workout powder"));
+// console.log(distance("sphinx of black quartz, judge my vow", "QUARTZ", "vOW"));
+// console.log(distance("I really hope it will snow soon because I like snow", "I", "snow"));
+// console.log(distance("I like sweet and salty but I like sweet more", "salty", "sweet"));
+
+    //Question 1 in objectUtils
+const first = {a: 2, b: 3};
+const second = {a: 2, b: 4};
+const third = {a: 2, b: 3};
+const forth = {a: {sA: "Hello", sB: "There", sC: "Class"}, b: 7, c: true, d: "Test"};
+const fifth  = {c: true, b: 7, d: "Test", a: {sB: "There", sC: "Class", sA: "Hello"}};
+const sixth = {name: {firstName: "Patrick", lastName: "Hill"}, age: 47, dob: '9/25/1975', hobbies: ["Playing music", "Movies", "Spending time with family"]};
+const seventh = {age: 47, name: {firstName: "Patrick", lastName: "Hill"}, hobbies: ["Playing music", "Movies", "Spending time with family"], dob: '9/25/1975'};
+const eighth = {b:3, a:2};
+console.log(areObjectsEqual(first, second));
