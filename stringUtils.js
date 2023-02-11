@@ -85,15 +85,14 @@ export let censorWords = (string, badWordsList) => {
 
 export let distance = (string, word1, word2) => {
     checkWordsCondition(string, word1, word2);
-    // if(word1.split(" ").length > 1 || word2.split(" ").length > 1){
-    //     return string.toLowerCase().split(" ").indexOf(word2.split(" ")[0].toLowerCase()) -
-    //         string.toLowerCase().split(" ").indexOf(word1.split(" ")[1].toLowerCase());
-    // }else {
-    //     return string.toLowerCase().split(" ").indexOf(word2.toLowerCase()) -
-    //         string.toLowerCase().split(" ").indexOf(word1.toLowerCase());
-    // }
-    let index1 = string.toLowerCase().split(" ").indexOf(word1.toLowerCase().split(" "));
-    let index2 = string.toLowerCase().split(" ").indexOf(word2.toLowerCase());
+    if(word1.split(" ").length > 1 || word2.split(" ").length > 1){
+        return string.toLowerCase().split(" ").indexOf(word2.split(" ")[0].toLowerCase()) -
+            string.toLowerCase().split(" ").indexOf(word1.split(" ")[word1.length  - 1].toLowerCase());
+    }else {
+        return string.toLowerCase().split(" ").indexOf(word2.toLowerCase()) -
+            string.toLowerCase().split(" ").indexOf(word1.toLowerCase());
+    }
+
 
     return index2 - index1;
 };

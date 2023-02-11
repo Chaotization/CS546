@@ -5,6 +5,7 @@
 
 let areObjectsEqual = (...args) => {
       //this function takes in a variable number of objects that's what the ...args signifies
+      
 };
 
 let calculateObject = (object, funcs) => {};
