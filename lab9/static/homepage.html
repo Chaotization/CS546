@@ -1,0 +1,45 @@
+<!-- 
+A header tag, with an h1 naming your site, with a title for your page. 
+A footer with your name, student ID, and any other info about yourself you wish to include
+A single div with an id of results.  
+Your page will have a form with the following:
+
+A label with a for attribute referencing your input
+A textarea element with a name and id of text_input
+A button to submit the form
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Text Analyzer</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="/public/css/main.css">
+</head>
+
+<body>
+<main>
+    <header>
+        <h1>Lab 9</h1>
+    </header>
+
+    <form action="/" method="POST" id="form-group">
+        <label for="textInput">Input the text:</label>
+        <textarea name="textInput" id="textInput"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="results"></div>
+    <div id ="errors"></div>
+    <footer>
+        <p>Name: Chao Zheng, ID: 20017348</p>
+    </footer>
+    <script src="/public/js/main.js"></script>
+</main>
+</body>
+</html>

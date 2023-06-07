@@ -1,0 +1,100 @@
+/*
+You will style your page using at least 5 CSS selectors for general CSS styling. You will place the CSS in its own file. 
+*/
+
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 50px;
+    padding: 20px;
+    overflow: scroll;
+}
+
+h1{
+    text-align: center;
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+input,
+textarea{
+    width: 100%;
+    padding: 10px;
+    align-items: center;
+    border-radius: 5px;
+    border: solid #ddd;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+textarea{
+    height: 150px;
+    resize: vertical;
+}
+
+button{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover{
+    background-color: #555;
+}
+
+.result{
+    height:200px;
+    overflow-y: auto;
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+footer{
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 14px;
+}

@@ -1,0 +1,18 @@
+{{!--
+
+If the user is logged in , and 'GET /protected' endpoint is called, you will render this view based on the specs.
+
+--}}
+
+<body>
+<link rel="stylesheet" href="/public/css/lab10.css">
+</body>
+
+<h1 class="container">{{title}}</h1>
+<p class="phrase">Welcome {{firstName}}, the time is now: {{currentTime}}. Your role in the system is: {{role}}</p>
+<div class="link">
+    {{#if isAdmin}}
+        <a href="/admin">Go Admin</a><br>
+    {{/if}}
+    <a href="/logout">Log out</a>
+</div>
